@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Zen+Dots&display=swap');
+
+/* font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px; */
+
+/* Paleta personalizada */
+:root {
+    --cor1: #01010c;
+    --cor2: #0D15A6;
+    --cor3: #1675F2;
+    --cor4: #169EF2;
+    --cor5: #9e9e9e;
+    --cor6: #0A0759;
+
+    /* --cor5: #1BF2F2; */
+
+
+
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--cor1);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+}
+
+header {
+    background-image: linear-gradient(var(--cor2), var(--cor6), var(--cor1));
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--cor3);
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-shadow: 0.5px 0.5px 5px var(--cor1);    
+}
+
+.menu {
+    background: rgba(255, 255, 255, 0.15); /* Fundo branco translúcido */
+    backdrop-filter: blur(10px);           /* Desfoque atrás do menu */
+    -webkit-backdrop-filter: blur(10px);   /* Safari */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);  /* Sombra para profundidade */
+    
+    padding: 1.2rem 3rem;
+    margin: 3rem 1rem 0 1rem;
+    border-radius: 50px;
+    text-align: center;
+    position: fixed;
+    top: 3rem;
+    z-index: 800;
+    transition: background 0.3s ease-in-out;
+}
+
+.logo {
+    text-align: center;
+    position: fixed;
+    bottom: 5rem;
+    left: 2.5rem;
+    z-index: 850;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    gap: 2rem;  
+}
+
+nav a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color:white;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    /* background-image: url('img/luzes-de-neon-gradientes-abstratas.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* .hero_bg {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -15;
+} */
+
+/* Texto digitando */
+.texto-digitando {
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif; /* Exemplo de fonte, ajuste conforme necessário */
+    color: var(--cor3); /* Cor do texto, ajuste conforme necessário */
+    z-index: 700;
+}
+
+/* Animação do cursor */
+.cursor {
+    color: var(--cor4);
+    animation: blink 0.7s infinite;
+    font-weight: 100; /* Pode ajustar a espessura do cursor se ele for um caractere como '|' */
+    font-style: normal;
+    font-size: 2.5rem;
+    z-index: 900;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* Marca d'água */
+.marca-dagua {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10rem;
+    position: absolute;
+    bottom: 15%;
+    color: rgba(13, 21, 166, 0.5); 
+    animation: fadeInOut 8s ease-in-out infinite;
+    opacity: 0.2;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Galeria vertical animada */
+.galeria-vertical {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 1rem;
+    align-items: flex-end;
+}
+
+.projeto {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease;
+    cursor: pointer;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.projeto.aparecer {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(10, 7, 89, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+}
+
+.modal-content {
+    background: var(--cor5);
+    color: var(--cor1);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0.5px 0.5px 5px #424242;   
+}
+
+.fechar {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: var(--cor5);
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-image: linear-gradient(var(--cor2), var(--cor6), var(--cor1), var(--cor1)); 
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+footer p {
+    color: var(--cor3);
+    font-size: 1.2rem;
+}
+
+.sobre_mim {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social a {
+    color: var(--cor5);
+    text-decoration: none;
+    padding: 1rem;    
+}
+
+footer .social a:hover {
+    color: white;  
+}
+
+.social {
+    font-size: 2rem;
+    margin: 8rem 1rem 0 1rem;
+}
+
+.direitos {
+    background: none;
+    margin-top: 2rem;
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor2);
+}
+
+.direitos p {
+    font-size: 0.8rem;
+}
+
+
+/* botão voltar ao topo */
+.back-to-top {
+    position: fixed;
+    z-index: 500;
+    bottom: 70px;
+    right: 50px;
+    display: none;
+    /* inicialmente escondido */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1675F2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.5px 0.5px 5px var(--cor1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .marca-dagua {
+        font-size: 3rem;
+    }
+
+    .texto-digitando {
+        font-size: 2rem;
+    }
+
+    .projeto img {
+        width: 250px;
+        height: 160px;
+    }
+}
