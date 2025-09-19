@@ -8,12 +8,12 @@ const fechar = document.querySelector(".fechar");
 const projetos = document.querySelectorAll(".projeto");
 
 const dadosProjetos = {
-    1: { img: "img/img_ref01.jpg", titulo: "Site Pizzaria - O Municipal", desc: "Desenvolvimento do website pizzaria O Municipal" },
-    2: { img: "img/img_ref02.jpg", titulo: "Landing Page de E-learning", desc: "Desenvolvimento de Landing Page para Treinamento Corporativo" },
-    3: { img: "img/img_ref03.jpg", titulo: "Site interativo - Arte Renascentista", desc: "Desenvolvimento do website interativo para Arte Renascentista - Rafael Sanzio" },
-    4: { img: "img/img_ref04.jpg", titulo: "APP corrida", desc: "UX/UI - Protótipo para projeto de App de corrida" },
-    5: { img: "img/img_ref05.jpg", titulo: "Infográfico Power BI", desc: "Criação de arte para infográfico com dados no Power BI" },
-    6: { img: "img/img_ref06.jpg", titulo: "Site interativo - Play List", desc: "Desenvolvimento do website interativo de música" },
+    1: { img: "img/galeria/dimildesigner_port_img01g.png", titulo: "Prototipagem", desc: "1. Suzano: Treinamento Anticorrupção - Pocket. Protótipo com 50 telas. Conteúdo informativo, quiz e vídeo; 2. Fundação Renova: Game - Guardiões, uma aventura no Rio Doce. Protótipo com 242 telas. Avatar, podcasts, vídeos, quiz e badges; 3. JBS: Treinamento Relacionamento com Governo e Agentes Públicos. Protótipo com 74 telas. Conteúdo informativo, quiz e vídeo; 4. Grupo Globo: Treinamento Compliance. Protótipo com 90 telas. Conteúdo informativo e quiz." },
+    2: { media: "img/galeria/dimildesigner_port_img02g.mp4", titulo: "Motions e vídeos", desc: "Animações, motions e edições de vídeos variados." },
+    3: { img: "img/galeria/dimildesigner_port_img03g.jpg", titulo: "E-mail Marketing", desc: "Vivo Champion: Cursos e certificações tech. Assunto atraente para despertar interesse. Conteúdo relevante sobre cursos de tecnologia. Botão com Chamada para Ação (CTA) para facilitar a inscrição. Consistência da Marca: fontes, cores, fotos e logo para fortalecer o reconhecimento. Logos dos parceiros para contextualizar os cursos e certificações." },
+    4: { img: "img/galeria/dimildesigner_port_img04g.jpg", titulo: "Game art", desc: "Fundação Renova: Game - Guardiões, uma aventura no Rio Doce. Ilustração do Projeto de Gamificação da Fundação Renova. Arte vetorial desenvolvida no Adobe Illustrator, baseada nos personagens e no mascote “Piauzim” do Projeto Doce Vivo." },
+    5: { img: "img/galeria/dimildesigner_port_img05g.jpg", titulo: "Logotipo e Manual de Identidade Visual", desc: "Associação Paulista de Neurologia - APAN SP. Apresenta a criação do logo e ícone (mapa do estado de SP/neurônio), estrutura, tipografia, padrões de cores, versões cromáticas, preto e negativo." },
+    6: { img: "img/galeria/dimildesigner_port_img06g.jpg", titulo: "Banners e Posts", desc: "1. Vivo Explore; 2. Vivo Como Faz? e 3. Vivo Transforma: Banners; 4. APM, 5. APM e SEBRAE; 6. APM e República Literária." },
 };
 
 projetos.forEach((el) => {
