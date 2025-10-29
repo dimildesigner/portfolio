@@ -1,39 +1,63 @@
-// Modal Lógica
+// Modal Lógica - Elementos atualizados
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
+const modalVideo = document.getElementById("modal-video"); // Novo elemento
 const modalTitulo = document.getElementById("modal-titulo");
 const modalDescricao = document.getElementById("modal-descricao");
 const fechar = document.querySelector(".fechar");
 
 const projetos = document.querySelectorAll(".projeto");
 
+// Alteração na estrutura dos dados:
+// 'img' para imagens, 'video' para vídeos.
 const dadosProjetos = {
-    1: { img: "img/galeria/dimildesigner_port_img01g.png", titulo: "Prototipagem", desc: "1. Suzano: Treinamento Anticorrupção - Pocket. Protótipo com 50 telas. Conteúdo informativo, quiz e vídeo; 2. Fundação Renova: Game - Guardiões, uma aventura no Rio Doce. Protótipo com 242 telas. Avatar, podcasts, vídeos, quiz e badges; 3. JBS: Treinamento Relacionamento com Governo e Agentes Públicos. Protótipo com 74 telas. Conteúdo informativo, quiz e vídeo; 4. Grupo Globo: Treinamento Compliance. Protótipo com 90 telas. Conteúdo informativo e quiz." },
-    2: { img: "img/galeria/dimildesigner_port_img02g.png", titulo: "Motions e vídeos", desc: "Animações, motions e edições de vídeos variados." },
-    3: { img: "img/galeria/dimildesigner_port_img03g.jpg", titulo: "E-mail Marketing", desc: "Vivo Champion: Cursos e certificações tech. Assunto atraente para despertar interesse. Conteúdo relevante sobre cursos de tecnologia. Botão com Chamada para Ação (CTA) para facilitar a inscrição. Consistência da Marca: fontes, cores, fotos e logo para fortalecer o reconhecimento. Logos dos parceiros para contextualizar os cursos e certificações." },
-    4: { img: "img/galeria/dimildesigner_port_img04g.jpg", titulo: "Game art", desc: "Fundação Renova: Game - Guardiões, uma aventura no Rio Doce. Ilustração do Projeto de Gamificação da Fundação Renova. Arte vetorial desenvolvida no Adobe Illustrator, baseada nos personagens e no mascote “Piauzim” do Projeto Doce Vivo." },
+    1: { img: "img/galeria/dimildesigner_port_img01g.png", titulo: "Prototipagem", desc: "1. Suzano: Treinamento Corporativo; 2. Fundação Renova: Game Corporativo; 3. JBS: Corporativo; 4. Grupo Globo: Treinamento Corporativo." },
+    2: { video: "video/dimildesigner_port_img02g.mp4", titulo: "Motions e vídeos", desc: "Animações, motions e edições de vídeos variados." }, // Mudança para 'video'
+    3: { img: "img/galeria/dimildesigner_port_img03g.jpg", titulo: "E-mail Marketing", desc: "Vivo Champion - Arte para divulgação de cursos e certificações tech. Botão com chamada para ação (CTA), para facilitar a inscrição. Consistência da Marca: fontes, cores, fotos e logo para fortalecer o reconhecimento. Logos dos parceiros dos cursos e certificações." },
+    4: { img: "img/galeria/dimildesigner_port_img04g.jpg", titulo: "Game art", desc: "Fundação Renova: Game - Guardiões, uma aventura no Rio Doce. Arte vetorial desenvolvida no Adobe Illustrator." },
     5: { img: "img/galeria/dimildesigner_port_img05g.jpg", titulo: "Logotipo e Manual de Identidade Visual", desc: "Associação Paulista de Neurologia - APAN SP. Apresenta a criação do logo e ícone (mapa do estado de SP/neurônio), estrutura, tipografia, padrões de cores, versões cromáticas, preto e negativo." },
-    6: { img: "img/galeria/dimildesigner_port_img06g.jpg", titulo: "Banners e Posts", desc: "1. Vivo Explore; 2. Vivo Como Faz? e 3. Vivo Transforma: Banners; 4. APM, 5. APM e SEBRAE; 6. APM e República Literária." },
+    6: { img: "img/galeria/dimildesigner_port_img06g.jpg", titulo: "Redes Sociais", desc: "Posts diversos: 1. Vivo Explore; 2. Vivo Como Faz?; 3. Vivo Transforma; 4. APM Evento Científico; 5. APM Médico Empreendedor e SEBRAE; 6. APM Cultural - Cine Debate." },
 };
+
+function fecharModal() {
+    modal.style.display = "none";
+    // Pausa o vídeo ao fechar o modal, caso esteja sendo exibido
+    modalVideo.pause();
+    modalVideo.currentTime = 0; // Opcional: volta o vídeo para o início
+}
 
 projetos.forEach((el) => {
     el.addEventListener("click", () => {
         const id = el.getAttribute("data-projeto");
         const data = dadosProjetos[id];
-        modalImg.src = data.img;
+        
         modalTitulo.textContent = data.titulo;
         modalDescricao.textContent = data.desc;
+
+        // Lógica para alternar entre imagem e vídeo
+        if (data.video) {
+            // É um projeto de vídeo
+            modalVideo.src = data.video;
+            modalVideo.style.display = "block"; // Mostra o elemento de vídeo
+            modalImg.style.display = "none";    // Oculta o elemento de imagem
+            modalVideo.play();                  // Inicia a reprodução do vídeo
+        } else {
+            // É um projeto de imagem
+            modalImg.src = data.img;
+            modalImg.style.display = "block";   // Mostra o elemento de imagem
+            modalVideo.style.display = "none";  // Oculta o elemento de vídeo
+            modalVideo.src = "";                // Limpa o src do vídeo (opcional, mas boa prática)
+        }
+
         modal.style.display = "flex";
     });
 });
 
-fechar.addEventListener("click", () => {
-    modal.style.display = "none";
-});
+fechar.addEventListener("click", fecharModal);
 
 window.addEventListener("click", (e) => {
     if (e.target === modal) {
-        modal.style.display = "none";
+        fecharModal();
     }
 });
 
@@ -60,9 +84,14 @@ const textoElemento = document.getElementById("digitando");
 const cursorElemento = document.querySelector(".cursor");
 
 const frases = [
-    "Bem-vindo ao meu portfolio!",
+    "Bem-vindo!",
     "Veja alguns de meus projetos.",
-    "Desenvolvimento Web e Design."
+    "Branding",
+    "Design Gráfico",
+    "Ilustração",    
+    "Motion Design",
+    "UX/UI Design",
+    "Web Design"
 ];
 
 let indiceFraseAtual = 0;
@@ -70,7 +99,7 @@ let indiceCaractereAtual = 0;
 let isDeleting = false;
 
 const velocidadeDigitacao = 120; // ms por caractere
-const velocidadeApagar = 30;     // ms por caractere ao apagar
+const velocidadeApagar = 25;     // ms por caractere ao apagar
 const tempoEspera = 1500;        // ms entre digitação e apagamento
 
 function digitarApagar() {
@@ -118,6 +147,8 @@ window.onscroll = function () {
 
 // Clique no botão para voltar ao topo
 document.getElementById("backToTopBtn").onclick = function () {
-    document.body.scrollTop = 0;             // Safari
-    document.documentElement.scrollTop = 0;  // Chrome, Firefox, IE, Opera
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Esta linha garante a suavidade
+    });
 };
