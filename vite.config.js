@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './styles/', // Isso garante que os caminhos sejam relativos ao index.html
+  base: './', // Isso garante que os caminhos sejam relativos ao index.html
 })
 
 
