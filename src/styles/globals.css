@@ -1,0 +1,127 @@
+/* ─── DESIGN TOKENS ──────────────────────────────────────── */
+:root {
+  /* Cores */
+  --bg:          #0B0B0F;
+  --bg-card:     #111117;
+  --bg-card-2:   #18181f;
+  --border:      #1e1e28;
+  --border-soft: rgba(255, 255, 255, 0.06);
+
+  --text:        #9CA3AF;
+  --text-strong: #E5E7EB;
+  --text-white:  #ffffff;
+
+  --purple:      #7C3AED;
+  --purple-light:#a855f7;
+  --purple-glow: rgba(124, 58, 237, 0.25);
+  --cyan:        #22D3EE;
+  --cyan-glow:   rgba(34, 211, 238, 0.15);
+
+  --gradient:    linear-gradient(135deg, var(--purple), var(--cyan));
+
+  /* Tipografia */
+  --font-heading: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Espaçamentos */
+  --section-py: 6rem;
+  --container:  72rem; /* 1152px */
+
+  /* Bordas */
+  --radius:    0.75rem;
+  --radius-sm: 0.5rem;
+
+  /* Sombras */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 40px var(--purple-glow);
+}
+
+/* ─── RESET & BASE ───────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-white);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  border: none;
+  background: none;
+}
+
+/* ─── UTILITÁRIOS ────────────────────────────────────────── */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: var(--section-py) 0;
+}
+
+/* ─── SCROLL PROGRESS BAR ────────────────────────────────── */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--gradient);
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* ─── FOCUS ACESSÍVEL ────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--purple-light);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─── SCROLLBAR ──────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--purple);
+}
