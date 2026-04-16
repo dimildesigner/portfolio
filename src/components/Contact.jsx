@@ -171,7 +171,7 @@ export default function Contact() {
 
             {/* Baixar CV */}
             <a
-              href="../assets/pdf/cv_edimilson_dev2026.pdf"
+              href="/cv_edimilson_dev2026.pdf"
               download
               aria-label="Baixar currículo em PDF"
               style={{

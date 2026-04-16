@@ -172,7 +172,7 @@ export default function About() {
                 Entrar em contato
               </a>
               <a
-                href="../assets/pdf/cv_edimilson_dev2026.pdf"
+                href="/cv_edimilson_dev2026.pdf"
                 download
                 style={{
                   padding: "0.65rem 1.4rem",
