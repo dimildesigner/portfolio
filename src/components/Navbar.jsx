@@ -92,7 +92,7 @@ export default function Navbar() {
               letterSpacing: "-0.02em",
             }}
           >
-            Dimil<span style={{ color: "var(--purple-light)" }}>.</span>
+            dimil <span style={{ color: "var(--purple-light)" }}>designer</span>
           </a>
 
           {/* Nav desktop */}

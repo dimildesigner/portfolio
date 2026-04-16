@@ -58,7 +58,7 @@ export default function About() {
               {/* Foto */}
               <img
                 src={photo}
-                alt="Foto de Dimil — Desenvolvedor Front-end"
+                alt="Foto de dimil designer — Desenvolvedor Front-end"
                 loading="lazy"
                 style={{
                   width: "100%",
@@ -103,9 +103,8 @@ export default function About() {
           >
             <div style={{ display: "flex", flexDirection: "column", gap: "1.1rem", color: "var(--text)", lineHeight: 1.75 }}>
               <p>
-                Sou Desenvolvedor Front-end em transição de carreira, com formação em
-                Publicidade e Propaganda e sólida experiência como Designer Gráfico
-                e Motion Designer.
+                Olá, eu sou o Dimil, um desenvolvedor Front-end em transição de carreira, com formação em
+                Publicidade e Propaganda e sólida experiência como Designer Gráfico e Motion Designer.
               </p>
 
               <p>

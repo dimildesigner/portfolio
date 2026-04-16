@@ -26,12 +26,12 @@ export default function Footer() {
           fontSize: "1rem",
           color: "var(--text-white)",
         }}>
-          Dimil<span style={{ color: "var(--purple-light)" }}>.</span>
+          dimil<span style={{ color: "var(--purple-light)" }}> designer</span>
         </span>
 
         {/* Copyright */}
         <p style={{ fontSize: "0.78rem", color: "var(--text)" }}>
-          © {currentYear} Dimil. Feito com React + Framer Motion.
+          © {currentYear} dimil designer | Site desenvolvido com React + Framer Motion.
         </p>
 
         {/* Links */}
