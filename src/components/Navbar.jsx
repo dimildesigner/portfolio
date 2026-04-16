@@ -127,7 +127,7 @@ export default function Navbar() {
 
           {/* Botão CV desktop */}
           <a
-            href="../assets/pdf/cv_edimilson_2026.pdf"
+            href="../assets/pdf/cv_edimilson_dev2026.pdf"
             download
             className="desktop-nav"
             style={{
@@ -234,7 +234,7 @@ export default function Navbar() {
                 ))}
                 <li>
                   <a
-                    href="../assets/pdf/cv_edimilson_2026.pdf"
+                    href="../assets/pdf/cv_edimilson_dev2026.pdf"
                     download
                     onClick={() => setMenuOpen(false)}
                     style={{
