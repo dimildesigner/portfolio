@@ -219,7 +219,14 @@ export default function Navbar() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      onClick={() => setMenuOpen(false)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setMenuOpen(false);
+                        document.body.style.overflow = "";
+                        setTimeout(() => {
+                          document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+                        }, 300);
+                      }}
                       style={{
                         fontSize: "1.1rem",
                         fontWeight: 600,
