@@ -1,7 +1,7 @@
 // src/components/About.jsx — foto corrigida
 import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
-import photo from "../assets/images/eddie_linkedin_duotone.png";
+import photo from "../assets/images/eddie_linkedin_duotone_0101.png";
 
 const stats = [
   { value: "React", label: "Stack principal" },
