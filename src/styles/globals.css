@@ -20,6 +20,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 
 /* ─── DESIGN TOKENS ──────────────────────────────────────── */
@@ -50,9 +52,11 @@
   /* --font-heading: "IBM Plex Mono", monospace; */
   /* --font-heading: "Oxanium", "Titillium Web", sans-serif; */
  
-  /* --font-body:    'DM Sans', sans-serif; */
-  --font-body: "Sora", sans-serif;
+  /* --font-body: 'DM Sans', sans-serif; */
+  /* --font-body: "Roboto", sans-serif; */
   /* --font-body: "Geist", sans-serif; */
+  --font-body: "Sora", sans-serif;
+  
 
   /* Espaçamentos */
   --section-py: 6rem;
@@ -83,7 +87,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

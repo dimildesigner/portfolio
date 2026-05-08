@@ -108,7 +108,7 @@ export default function Hero() {
                 textTransform: "uppercase",
               }}
             >
-              HTML · CSS · JavaScript · React.js · UX/UI
+              HTML · CSS · JavaScript · React.js · Three.js · UX/UI
             </motion.p>
 
             <motion.p
@@ -276,7 +276,7 @@ export default function Hero() {
                 }}
               >
                 <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#22D3EE", flexShrink: 0 }} />
-                React · Framer · Tailwind
+                React.js · Three.js · Tailwind
               </motion.div>
             </div>
           </motion.div>

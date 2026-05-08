@@ -31,7 +31,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p style={{ fontSize: "0.78rem", color: "var(--text)" }}>
-          © {currentYear} dimil designer | Site desenvolvido com React + Framer Motion.
+          © {currentYear} dimil designer. Todos os direitos reservados.
         </p>
 
         {/* Links */}

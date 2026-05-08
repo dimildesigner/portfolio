@@ -231,7 +231,7 @@ export default function Contact() {
               paddingLeft: "1rem",
             }}
           >
-            Aberto a oportunidades como <strong style={{ color: "var(--text-strong)" }}>Desenvolvedor Front-end Júnior</strong>.
+            Aberto a oportunidades como <strong style={{ color: "var(--text-strong)" }}>Desenvolvedor Front-end Júnior</strong>. <br />
             Respondo em até 24h.
           </motion.p>
         </div>
