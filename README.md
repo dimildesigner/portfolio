@@ -2,7 +2,7 @@
 
 🎨 Designer → 💻 Desenvolvedor Front-end
 
-Este repositório contém meu **portfólio profissional como Desenvolvedor Front-end**, onde apresento projetos, habilidades técnicas e minha evolução na área de tecnologia.
+Este repositório contém meu **portfólio profissional como Desenvolvedor Front-end e Designer**, onde apresento projetos, habilidades técnicas e minha evolução na área de tecnologia.
 
 ---
 
