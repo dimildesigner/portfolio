@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import photo from "../assets/images/eddie_linkedin_duotone_0101.png";
 import videoEddie from "../assets/videos/filme_duotone_0101.mp4";
+import videoMotion from "../assets/videos/projetos_motion.mp4";
 
 const stats = [
   { value: "React.js", label: "Stack principal" },
@@ -79,7 +80,7 @@ export default function About() {
 
               {/* Foto Viva (Vídeo com Efeito Evolução do Código) */}
               <video
-                src={videoEddie}
+                src={videoMotion}
                 autoPlay
                 loop
                 muted
@@ -148,9 +149,9 @@ export default function About() {
               }}
             >
               <p>
-                Olá, eu sou o Dimil, um desenvolvedor Front-end em transição de
-                carreira, com formação em Publicidade e Propaganda e sólida
-                experiência como Designer Gráfico e Motion Designer.
+                Olá, eu sou o Edimilson. Também conhecido como Eddei e Dimil. <br />
+                Sou um desenvolvedor Front-end em transição de
+                carreira e estou migrando da área do Design. Publicitário de formação, tenho experiência como Designer Gráfico e Motion Designer (ao lado alguns projetos de motion).
               </p>
 
               <p>
