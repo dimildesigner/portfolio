@@ -125,29 +125,5 @@ export const projects = [
       "Mini player no rodapé com capa do álbum e artista",
       "Efeito sonoto de scratch, quando o Jukebox é rotacionado",
     ],
-<<<<<<< HEAD
   }, 
-=======
-  },
-  {
-    id: 5,
-    title: "Revista 3D | Interativa",
-    description:
-      "Uma experiência imersiva de leitura digital desenvolvida com React.js e Three.js. Este projeto simula uma revista física em um ambiente 3D, permitindo a interação com a virada de páginas, curvatura realista do papel e iluminação dinâmica.",
-    tech: ["Three.js", "Vite", "Node.js"],
-    github: "https://github.com/dimildesigner/revista-3d-interativa/",
-    demo: "https://revista-3d-interativa.vercel.app/",
-    problem:
-      "Este projeto nasceu da necessidade de criar uma forma inovadora de apresentar conteúdos digitais, unindo o design editorial clássico com as tecnologias mais modernas de renderização WebGL.",
-    solution:
-      "O grande desafio técnico superado foi a implementação de uma geometria personalizada que permite a deformação das páginas durante a transição, garantindo que a revista se comporte de forma orgânica e estável em diferentes navegadores.",
-    highlights: [
-      "Geometria de Lâmina, implementação de páginas com espessura real",
-      "Curvatura Dinâmica, simula uma dobra do papel baseada na posição da página",
-      "Navegação Inteligente e controle por cliques (esquerdo avança e direito volta)",
-      "Performance Otimizada",
-      "Interface flutuante com foco em tipografia e contraste",
-    ],
-  },
->>>>>>> d267cfe316170d47d216939b24a2c59c5dc2b2e9
 ];
