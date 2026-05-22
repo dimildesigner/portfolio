@@ -1,6 +1,7 @@
 // src/components/Navbar.jsx
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoDD from "../assets/icons/logo_dd.svg";
 
 const navLinks = [
   { label: "Sobre", href: "#about" },
@@ -18,7 +19,8 @@ export default function Navbar() {
     const scrollY = window.scrollY;
     setScrolled(scrollY > 50);
 
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
     setProgress(docHeight > 0 ? (scrollY / docHeight) * 100 : 0);
   }, []);
 
@@ -29,7 +31,9 @@ export default function Navbar() {
 
   // Fechar menu com ESC
   useEffect(() => {
-    const onKey = (e) => { if (e.key === "Escape") setMenuOpen(false); };
+    const onKey = (e) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, []);
@@ -37,7 +41,9 @@ export default function Navbar() {
   // Travar scroll quando menu está aberto
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [menuOpen]);
 
   return (
@@ -68,7 +74,9 @@ export default function Navbar() {
           transition: "background 0.3s ease, border-color 0.3s ease",
           background: scrolled ? "rgba(11,11,15,0.85)" : "transparent",
           backdropFilter: scrolled ? "blur(12px)" : "none",
-          borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
+          borderBottom: scrolled
+            ? "1px solid var(--border)"
+            : "1px solid transparent",
         }}
       >
         <div
@@ -85,14 +93,33 @@ export default function Navbar() {
             href="#"
             aria-label="Ir para o início"
             style={{
+              display: "flex" /* Alinha os itens em linha */,
+              alignItems:
+                "center" /* Centraliza verticalmente a imagem e o texto */,
+              gap: "10px" /* Cria um espaçamento entre a imagem e o texto */,
               fontFamily: "var(--font-heading)",
               fontWeight: 800,
               fontSize: "1.25rem",
               color: "var(--text-white)",
               letterSpacing: "-0.02em",
+              textDecoration: "none" /* Remove sublinhados padrão de links */,
             }}
           >
-            dimil <span style={{ color: "var(--purple-light)" }}>designer</span>
+            {/* Tag da imagem do seu logotipo */}
+            <img
+              src={logoDD}
+              alt="Logotipo DimilDesigner"
+              style={{
+                height:
+                  "60px" /* Ajuste a altura para combinar com o tamanho do texto */,
+                width: "auto" /* Mantém a proporção da imagem */,
+              }}
+            />
+
+            <span>
+              dimil{" "}
+              <span style={{ color: "var(--purple-light)" }}>designer</span>
+            </span>
           </a>
 
           {/* Nav desktop */}
@@ -115,7 +142,9 @@ export default function Navbar() {
                       color: "var(--text)",
                       transition: "color 0.2s",
                     }}
-                    onMouseEnter={(e) => (e.target.style.color = "var(--text-white)")}
+                    onMouseEnter={(e) =>
+                      (e.target.style.color = "var(--text-white)")
+                    }
                     onMouseLeave={(e) => (e.target.style.color = "var(--text)")}
                   >
                     {link.label}
@@ -139,8 +168,12 @@ export default function Navbar() {
               borderRadius: "var(--radius-sm)",
               transition: "border-color 0.2s, color 0.2s",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "var(--purple-light)")}
-            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "var(--border-soft)")}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.borderColor = "var(--purple-light)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.borderColor = "var(--border-soft)")
+            }
           >
             Baixar CV
           </a>
@@ -162,30 +195,38 @@ export default function Navbar() {
               cursor: "pointer",
             }}
           >
-            <span style={{
-              display: "block",
-              width: "22px",
-              height: "2px",
-              background: "var(--text-white)",
-              transition: "transform 0.25s, opacity 0.25s",
-              transform: menuOpen ? "translateY(7px) rotate(45deg)" : "none",
-            }} />
-            <span style={{
-              display: "block",
-              width: "22px",
-              height: "2px",
-              background: "var(--text-white)",
-              transition: "opacity 0.25s",
-              opacity: menuOpen ? 0 : 1,
-            }} />
-            <span style={{
-              display: "block",
-              width: "22px",
-              height: "2px",
-              background: "var(--text-white)",
-              transition: "transform 0.25s, opacity 0.25s",
-              transform: menuOpen ? "translateY(-7px) rotate(-45deg)" : "none",
-            }} />
+            <span
+              style={{
+                display: "block",
+                width: "22px",
+                height: "2px",
+                background: "var(--text-white)",
+                transition: "transform 0.25s, opacity 0.25s",
+                transform: menuOpen ? "translateY(7px) rotate(45deg)" : "none",
+              }}
+            />
+            <span
+              style={{
+                display: "block",
+                width: "22px",
+                height: "2px",
+                background: "var(--text-white)",
+                transition: "opacity 0.25s",
+                opacity: menuOpen ? 0 : 1,
+              }}
+            />
+            <span
+              style={{
+                display: "block",
+                width: "22px",
+                height: "2px",
+                background: "var(--text-white)",
+                transition: "transform 0.25s, opacity 0.25s",
+                transform: menuOpen
+                  ? "translateY(-7px) rotate(-45deg)"
+                  : "none",
+              }}
+            />
           </button>
         </div>
 
@@ -224,7 +265,9 @@ export default function Navbar() {
                         setMenuOpen(false);
                         document.body.style.overflow = "";
                         setTimeout(() => {
-                          document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+                          document
+                            .querySelector(link.href)
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }, 300);
                       }}
                       style={{

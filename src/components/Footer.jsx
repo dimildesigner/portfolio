@@ -1,3 +1,5 @@
+import logoDD from "../assets/icons/logo_dd.svg";
+
 // src/components/Footer.jsx
 const currentYear = new Date().getFullYear();
 
@@ -14,20 +16,44 @@ export default function Footer() {
         style={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
+          justifyContent: "center",
           flexWrap: "wrap",
-          gap: "1rem",
+          gap: "5rem",
         }}
       >
-        {/* Assinatura */}
-        <span style={{
-          fontFamily: "var(--font-heading)",
-          fontWeight: 700,
-          fontSize: "1rem",
-          color: "var(--text-white)",
-        }}>
-          dimil<span style={{ color: "var(--purple-light)" }}> designer</span>
-        </span>
+        <div
+          className=""
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap: "0.5rem",
+          }}
+        >
+          {/* Tag da imagem do seu logotipo */}
+          <img
+            src={logoDD}
+            alt="Logotipo DimilDesigner"
+            style={{
+              height:
+                "40px" /* Ajuste a altura para combinar com o tamanho do texto */,
+              width: "auto" /* Mantém a proporção da imagem */,
+            }}
+          />
+
+          {/* Assinatura */}
+          <span
+            style={{
+              fontFamily: "var(--font-heading)",
+              fontWeight: 700,
+              fontSize: "1rem",
+              color: "var(--text-white)",
+            }}
+          >
+            dimil<span style={{ color: "var(--purple-light)" }}> designer</span>
+          </span>
+        </div>
 
         {/* Copyright */}
         <p style={{ fontSize: "0.78rem", color: "var(--text)" }}>
@@ -35,10 +61,16 @@ export default function Footer() {
         </p>
 
         {/* Links */}
-        <nav aria-label="Links do rodapé" style={{ display: "flex", gap: "1.5rem" }}>
+        <nav
+          aria-label="Links do rodapé"
+          style={{ display: "flex", gap: "1.5rem" }}
+        >
           {[
             { label: "GitHub", href: "https://github.com/dimildesigner" },
-            { label: "LinkedIn", href: "https://linkedin.com/in/dimildesigner" },
+            {
+              label: "LinkedIn",
+              href: "https://linkedin.com/in/dimildesigner",
+            },
           ].map((link) => (
             <a
               key={link.label}

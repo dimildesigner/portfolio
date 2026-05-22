@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import photo from "../assets/images/eddie_linkedin_duotone_0101.png";
+import videoEddie from "../assets/videos/filme_duotone_0101.mp4";
 
 const stats = [
   { value: "React.js", label: "Stack principal" },
@@ -18,7 +19,7 @@ export default function About() {
       <div className="container">
         <SectionTitle
           label="Sobre mim"
-          title="Design que escreve código"
+          title="Designer que escreve código"
           description="Um profissional que entende os dois lados da tela."
         />
 
@@ -62,10 +63,29 @@ export default function About() {
               />
 
               {/* Foto */}
-              <img
+              {/* <img
                 src={photo}
                 alt="Foto de dimil designer — Desenvolvedor Front-end"
                 loading="lazy"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  display: "block",
+                  borderRadius: "var(--radius)",
+                }}
+              /> */}
+
+              {/* Foto Viva (Vídeo com Efeito Evolução do Código) */}
+              <video
+                src={videoEddie}
+                autoPlay
+                loop
+                muted
+                playsInline
+                loading="lazy"
+                alt="Animação de dimil designer — Desenvolvedor Front-end"
                 style={{
                   width: "100%",
                   height: "100%",
