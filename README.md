@@ -4,6 +4,7 @@
 
 Este repositório contém meu **portfólio profissional como Desenvolvedor Front-end**, onde apresento projetos, habilidades técnicas e minha evolução na área de tecnologia.
 
+
 ---
 
 # 🚀 Sobre este projeto
@@ -17,6 +18,7 @@ Este portfólio foi desenvolvido com o objetivo de:
 
 O foco principal é criar uma experiência moderna, responsiva e centrada no usuário.
 
+
 ---
 
 # 👨‍💻 Sobre mim
@@ -26,6 +28,7 @@ Sou um Desenvolvedor Front-end em transição de carreira, com formação em Pub
 Ao longo da minha trajetória, atuei em projetos digitais, branding e produção audiovisual, desenvolvendo um olhar estratégico para design, usabilidade e experiência do usuário (UX/UI).
 
 Hoje direciono minha carreira para o desenvolvimento web, criando interfaces modernas, funcionais e visualmente consistentes.
+
 
 ---
 
@@ -47,6 +50,7 @@ Hoje direciono minha carreira para o desenvolvimento web, criando interfaces mod
 - Prototipação  
 - Design de Interfaces  
 
+
 ---
 
 # 💡 Stack
@@ -56,6 +60,7 @@ Minha atuação está focada na interseção entre:
 👉 **Desenvolvimento Front-end + UX/UI**
 
 Acredito que a combinação entre design e código permite criar produtos digitais mais intuitivos, acessíveis e eficientes.
+
 
 ---
 
@@ -78,6 +83,7 @@ Entre os projetos (em evolução), estão:
 
 *(Novos projetos serão adicionados conforme minha evolução técnica.)*
 
+
 ---
 
 # 🎯 Objetivo profissional
@@ -87,6 +93,7 @@ Estou em busca de uma oportunidade como:
 👉 **Desenvolvedor Front-end Júnior**
 
 Quero contribuir em projetos reais, evoluir tecnicamente e gerar impacto através da tecnologia.
+
 
 ---
 
@@ -98,6 +105,15 @@ Estou aberto a:
 - Projetos freelance  
 - Colaborações  
 
+
+---
+
+# ⭐ Considerações finais
+
+Este portfólio representa minha evolução profissional e meu compromisso com a área de tecnologia.
+Se quiser trocar ideias ou falar sobre projetos, será um prazer conversar!
+
+
 ---
 
 # 📬 Contato
@@ -106,10 +122,9 @@ Estou aberto a:
 🔗 LinkedIn: https://linkedin.com/in/dimildesigner  
 💻 GitHub: https://github.com/dimildesigner  
 
+
 ---
 
-# ⭐ Considerações finais
+## 📄 Licença
 
-Este portfólio representa minha evolução profissional e meu compromisso com a área de tecnologia.
-
-Se quiser trocar ideias ou falar sobre projetos, será um prazer conversar!
+MIT © [dimildesigner](https://github.com/dimildesigner)

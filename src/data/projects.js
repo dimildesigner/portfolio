@@ -66,6 +66,45 @@ export const projects = [
   },
   {
     id: 4,
+    title: "Revista 3D | Interativa",
+    description:
+      "Uma experiência imersiva de leitura digital desenvolvida com React.js e Three.js. Este projeto simula uma revista física em um ambiente 3D, permitindo a interação com a virada de páginas, curvatura realista do papel e iluminação dinâmica.",
+    tech: ["Three.js", "Vite", "Node.js"],
+    github: "https://github.com/dimildesigner/revista-3d-interativa/",
+    demo: "https://revista-3d-interativa.vercel.app/",
+    problem:
+      "Este projeto nasceu da necessidade de criar uma forma inovadora de apresentar conteúdos digitais, unindo o design editorial clássico com as tecnologias mais modernas de renderização WebGL.",
+    solution:
+      "O grande desafio técnico superado foi a implementação de uma geometria personalizada que permite a deformação das páginas durante a transição, garantindo que a revista se comporte de forma orgânica e estável em diferentes navegadores.",
+    highlights: [
+      "Geometria de Lâmina, implementação de páginas com espessura real",
+      "Curvatura Dinâmica, simula uma dobra do papel baseada na posição da página",
+      "Navegação Inteligente e controle por cliques (esquerdo avança e direito volta)",
+      "Performance Otimizada",
+      "Interface flutuante com foco em tipografia e contraste",
+    ],
+  },
+   
+  {
+    id: 5,
+    title: "Detetive do Descarte: Operação Eco-Compliance",
+    description:
+      "Um treinamento corporativo gamificado em formato de Graphic Novel interativa. O jogo mergulha em uma atmosfera Noir dos anos 1940 para engajar colaboradores na prática do descarte consciente e da logística reversa, unindo narrativas de mistério a mecânicas visuais de alta imersão.",
+    tech: ["React.js (Vite)", "Tailwind CSS", "GSAP (GreenSock Animation)", "HTML5 Canvas", "SVG Dinâmico" ],
+    github: "https://github.com/dimildesigner/detetive-do-descarte",
+    demo: "https://detetive-do-descarte.vercel.app/",
+    problem:
+      "Treinamentos corporativos tradicionais sobre sustentabilidade e compliance costumam ser densos, cansativos e geram baixo engajamento prático, resultando em erros contínuos de descarte no ambiente de trabalho.",
+    solution:
+      "Transformar regras complexas de reciclagem em uma investigação policial interativa. Através de 4 casos criminais baseados em histórias em quadrinhos, o usuário aprende ativamente a triagem correta de resíduos enquanto joga e pontua.",
+    highlights: [
+      "Destaques: Direção de Arte Autoral: Identidade visual inspirada em pulp art e estética Sin City, com ilustrações exclusivas em alto contraste.",
+      "Mecânicas de Front-end Avançadas: Iluminação de cenários em tempo real com lanterna via HTML5 Canvas e simulação física de cabos elásticos/fitas com curvas SVG e GSAP.",
+      "Design focado em UX: Interface responsiva, desafios dinâmicos com ordenação randômica e trilha sonora imersiva, com controle de áudio intuitivo para o usuário.",
+    ],
+  },
+  {
+    id: 6,
     title: "Jukebox Experience - iTunes Search API",
     description:
       "Uma experiência musical imersiva em 3D — busque, ouça e sinta a música.",
@@ -86,5 +125,5 @@ export const projects = [
       "Mini player no rodapé com capa do álbum e artista",
       "Efeito sonoto de scratch, quando o Jukebox é rotacionado",
     ],
-  },
+  }, 
 ];

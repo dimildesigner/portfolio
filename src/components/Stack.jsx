@@ -11,11 +11,6 @@ import figmaLogo from "../assets/icons/logo_figma.svg";
 import viteLogo from "../assets/icons/logo_vite.svg";
 
 
-
-
-
-
-
 const categories = [
   {
     label: "Front-end",
