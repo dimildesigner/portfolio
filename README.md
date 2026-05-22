@@ -1,8 +1,8 @@
-# 👋 Olá, eu sou o Dimil
+# 👋 Olá, eu sou o Edimilson, também conhecido como Eddie e Dimil.
 
 🎨 Designer → 💻 Desenvolvedor Front-end
 
-Este repositório contém meu **portfólio profissional como Desenvolvedor Front-end**, onde apresento projetos, habilidades técnicas e minha evolução na área de tecnologia.
+Este repositório contém meu **portfólio profissional como Designer e Desenvolvedor Front-end**, onde apresento projetos, habilidades técnicas e minha evolução na área de tecnologia.
 
 
 ---
