@@ -6,12 +6,9 @@ import videoEddie from "../assets/videos/filme_duotone_0101.mp4";
 import videoMotion from "../assets/videos/projetos_motion.mp4";
 
 const stats = [
-  { value: "React.js", label: "Stack principal" },
-  { value: "Three.js", label: "Projetos 3D interessantes" },
-  { value: "Tailwind CSS", label: "Atomic CSS" },
-  { value: "10+", label: "Anos em HTML, CSS e JavaScript" },
-  { value: "5+", label: "Anos com UX/UI" },
-  { value: "100+", label: "Projetos construídos" },
+  { value: "+100 Projetos", label: "Compromisso contínuo com a entrega e qualidade" },
+  { value: "UX/UI", label: "Design centrado no usuário como base para o código" },
+  { value: "React.js", label: "Foco em componentes escaláveis" },
 ];
 
 export default function About() {
@@ -20,7 +17,7 @@ export default function About() {
       <div className="container">
         <SectionTitle
           label="Sobre mim"
-          title="Designer que escreve código"
+          title="A ponte entre o Design e o Código"
           description="Um profissional que entende os dois lados da tela."
         />
 
@@ -103,8 +100,8 @@ export default function About() {
                   position: "absolute",
                   bottom: "1rem",
                   right: "1rem",
-                  background: "rgba(124, 58, 237, 0.82)",
-                  border: "1px solid rgba(34,211,238,0.3)",
+                  background: "rgba(124, 58, 237, 0.93)",
+                  border: "1px solid rgba(34, 211, 238, 0.75)",
                   borderRadius: "2rem",
                   padding: "0.35rem 0.75rem",
                   fontSize: "0.7rem",
@@ -119,15 +116,15 @@ export default function About() {
               >
                 <span
                   style={{
-                    width: 6,
-                    height: 6,
+                    width: 8,
+                    height: 8,
                     borderRadius: "50%",
                     background: "var(--cyan-glow)",
                     animation: "pulse 2s infinite",
                     flexShrink: 0,
                   }}
                 />
-                Disponível
+                Alguns projetos em Motion
               </div>
             </div>
           </motion.div>
@@ -148,29 +145,22 @@ export default function About() {
                 lineHeight: 1.75,
               }}
             >
+              <p style={{ color: "var(--purple-light)", fontWeight: 500 }}>
+                Olá, eu sou o Edimilson, também conhecido como dimil. Seja bem-vindo!
+              </p>
               <p>
-                Olá, eu sou o Edimilson. Também conhecido como Eddei e Dimil. <br />
-                Sou um desenvolvedor Front-end em transição de
-                carreira e estou migrando da área do Design. Publicitário de formação, tenho experiência como Designer Gráfico e Motion Designer (ao lado alguns projetos de motion).
+                Sou um desenvolvedor Front-end com uma trajetória sólida em design e comunicação visual. Minha abordagem vai além do código: aplico anos de experiência em interfaces e branding para garantir que cada linha de desenvolvimento web tenha propósito, usabilidade e uma estética impecável.
               </p>
 
               <p>
-                Ao longo da minha trajetória, atuei em projetos de comunicação
-                digital, branding e produção audiovisual — desenvolvendo um
-                olhar estratégico para design, usabilidade e experiência do
-                usuário (UX/UI).
+                Minha carreira foi construída sobre a base do pensamento estratégico em design, e hoje, utilizo o desenvolvimento web como ferramenta para concretizar essas soluções. Com proficiência em React.js e tecnologias modernas de front-end, meu trabalho é entregar aplicações que não apenas funcionam, mas que elevam a experiência do usuário final.
               </p>
 
-              <p>
-                Foi a partir da atuação com interfaces e prototipação que
-                direcionei minha carreira para o desenvolvimento web,
-                aprofundando conhecimentos em HTML, CSS, JavaScript e React.js.
+              <p>                
               </p>
 
               <p style={{ color: "var(--purple-light)", fontWeight: 500 }}>
-                Hoje meu foco é criar interfaces modernas, responsivas e
-                funcionais — unindo estética e código para entregar experiências
-                digitais eficientes.
+                Minha transição para o desenvolvimento é, na verdade, uma evolução: trago a sensibilidade artística e a visão sistêmica para o ambiente do código, resultando em interfaces mais intuitivas, performáticas e alinhadas às necessidades do negócio.
               </p>
             </div>
 

@@ -9,34 +9,42 @@ import gitLogo from "../assets/icons/logo_git.svg";
 import githubLogo from "../assets/icons/logo_github.svg";
 import figmaLogo from "../assets/icons/logo_figma.svg";
 import viteLogo from "../assets/icons/logo_vite.svg";
-
+import tailwindLogo from "../assets/icons/logo_tailwindcss.svg";
+import treejsLogo from "../assets/icons/logo_threejs.svg";
 
 const categories = [
   {
-    label: "Front-end",
+    label: "Front-end & Lógica",
     items: [
-      { name: "HTML5", icon: <img src={htmlLogo} alt="HTML5" width="25" /> },
-      { name: "CSS3", icon: <img src={cssLogo} alt="CSS3" width="25" /> },
-      { name: "JavaScript", icon: <img src={jsLogo} alt="JavaScript" width="25" /> },
-      { name: "React.js", icon: <img src={reactLogo} alt="React.js" width="25" /> },
+      { name: "HTML5", icon: <img src={htmlLogo} alt="Logotipo HTML5" width="25" /> },
+      { name: "CSS3", icon: <img src={cssLogo} alt="Logotipo CSS3" width="25" /> },
+      { name: "JavaScript (ES6+)", icon: <img src={jsLogo} alt="Logotipo JavaScript (ES6+)" width="25" /> },
+      { name: "React.js", icon: <img src={reactLogo} alt="Logotipo React.js" width="25" /> },
     ],
   },
   {
-    label: "Ferramentas",
+    label: "Performance & Estilo",
     items: [
-      { name: "Git", icon: <img src={gitLogo} alt="Git" width="25" /> },
-      { name: "GitHub", icon: <img src={githubLogo} alt="GitHub" width="25" /> },
-      { name: "Figma", icon: <img src={figmaLogo} alt="Figma" width="25" /> },
-      { name: "Vite", icon: <img src={viteLogo} alt="Vite" width="25" /> },
-    ],
-  },
-  {
-    label: "Conceitos",
-    items: [
+      { name: "Tailwind CSS", icon: <img src={tailwindLogo} alt="Logotipo Tailwind CSS" width="25" /> },
       { name: "Responsividade", icon: "📱" },
-      { name: "UX/UI", icon: "🖌️" },
       { name: "Acessibilidade", icon: "♿" },
-      { name: "Performance", icon: "🚀" },
+    ],
+  },
+  {
+    label: "Workflow",
+    items: [
+      { name: "Git", icon: <img src={gitLogo} alt="Logotipo Git" width="25" /> },
+      { name: "GitHub", icon: <img src={githubLogo} alt="Logotipo GitHub" width="25" /> },
+      { name: "Figma", icon: <img src={figmaLogo} alt="Logotipo Figma" width="25" /> },
+      { name: "Vite", icon: <img src={viteLogo} alt="Logotipo Vite" width="25" /> },
+    ],
+  },
+
+  {
+    label: "Diferencial",
+    items: [
+      { name: "UX/UI Design", icon: "🖌️" },
+      { name: "Three.js (Experiências 3D)", icon: <img src={treejsLogo} alt="Logotipo Three.js" width="25" />},
     ],
   },
 ];

@@ -44,8 +44,8 @@ export default function Contact() {
       <div className="container">
         <SectionTitle
           label="Contato"
-          title="Vamos conversar?"
-          description="Estou disponível para oportunidades como Desenvolvedor Front-end Júnior, projetos freelance ou colaborações."
+          title="Vamos construir algo juntos?"
+          description="Estou em busca de novos desafios como desenvolvedor Front-end, onde minha experiência técnica e visão de design possam agregar valor ao seu time."
         />
 
         <div style={{ maxWidth: "560px" }}>
@@ -231,8 +231,8 @@ export default function Contact() {
               paddingLeft: "1rem",
             }}
           >
-            Aberto a oportunidades como <strong style={{ color: "var(--text-strong)" }}>Desenvolvedor Front-end Júnior</strong>. <br />
-            Respondo em até 24h.
+            Disponível para <strong style={{ color: "var(--text-strong)" }}>novos projetos e parcerias</strong>. <br />
+            Resposta em até 24h.
           </motion.p>
         </div>
       </div>

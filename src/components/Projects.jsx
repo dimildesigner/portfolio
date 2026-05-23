@@ -13,8 +13,8 @@ export default function Projects() {
       <div className="container">
         <SectionTitle
           label="Projetos"
-          title="Projetos em destaque"
-          description="Aplicações reais que demonstram domínio técnico e atenção à experiência do usuário."
+          title="Portfólio de Projetos"
+          description="Aplicações focadas em resolução de problemas, performance e usabilidade."
         />
 
         <div style={{

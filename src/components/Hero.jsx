@@ -71,7 +71,7 @@ export default function Hero() {
                 background: "var(--cyan)",
                 animation: "pulse 2s infinite",
               }} />
-              Disponível para oportunidades
+              Desenvolvimento Front-end & Design UX
             </motion.span>
 
             <motion.h1
@@ -85,16 +85,15 @@ export default function Hero() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Desenvolvedor{" "}
+              Interfaces {" "}
               <span style={{
                 background: "linear-gradient(135deg, var(--purple-light), var(--cyan))",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
               }}>
-                Front-end
+                performáticas, estéticas e funcionais
               </span>
-              <br />com foco em UX
             </motion.h1>
 
             <motion.p
@@ -121,9 +120,7 @@ export default function Hero() {
                 fontSize: "1rem",
               }}
             >
-              Crio interfaces modernas, responsivas e centradas no usuário,
-              unindo design estratégico e código para entregar experiências
-              digitais eficientes.
+              Construindo interfaces digitais que unem performance técnica, estética e foco total na jornada do usuário.
             </motion.p>
 
             <motion.div
