@@ -4,10 +4,17 @@ import SectionTitle from "./SectionTitle";
 import photo from "../assets/images/eddie_linkedin_duotone_0101.png";
 import videoEddie from "../assets/videos/filme_duotone_0101.mp4";
 import videoMotion from "../assets/videos/projetos_motion.mp4";
+import designGrafico from "../assets/images/page-01.jpg";
 
 const stats = [
-  { value: "+100 Projetos", label: "Compromisso contínuo com a entrega e qualidade" },
-  { value: "UX/UI", label: "Design centrado no usuário como base para o código" },
+  {
+    value: "+100 Projetos",
+    label: "Compromisso contínuo com a entrega e qualidade",
+  },
+  {
+    value: "UX/UI",
+    label: "Design centrado no usuário como base para o código",
+  },
   { value: "React.js", label: "Foco em componentes escaláveis" },
 ];
 
@@ -42,12 +49,12 @@ export default function About() {
                 position: "relative",
                 borderRadius: "var(--radius)",
                 overflow: "hidden",
-                border: "1px solid var(--border)",
+                border: "0px solid var(--border)",
                 lineHeight: 0,
               }}
             >
               {/* Linha decorativa lateral roxa */}
-              <div
+              {/* <div
                 style={{
                   position: "absolute",
                   left: 0,
@@ -58,7 +65,7 @@ export default function About() {
                     "linear-gradient(to bottom, var(--purple), var(--cyan))",
                   zIndex: 1,
                 }}
-              />
+              /> */}
 
               {/* Foto */}
               {/* <img
@@ -75,7 +82,77 @@ export default function About() {
                 }}
               /> */}
 
-              {/* Foto Viva (Vídeo com Efeito Evolução do Código) */}
+              <a 
+                href="https://revista-3d-interativa.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "0",
+                  width: "60%",
+                }}
+              >
+
+              {/* Foto */}
+              <img
+                src={designGrafico}
+                alt="Foto de dimil designer — Desenvolvedor Front-end"
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  display: "block",
+                  borderRadius: "var(--radius)",
+                  overflow: "hidden",
+                  border: "1px solid var(--border)",
+                }}
+              />
+              </a>
+
+              {/* Chip: Motion */}
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: "20rem",
+                  right: "1rem",
+                  background: "rgba(124, 58, 237, 0.93)",
+                  border: "1px solid rgba(34, 211, 238, 0.75)",
+                  borderRadius: "2rem",
+                  padding: "0.35rem 0.75rem",
+                  fontSize: "0.7rem",
+                  color: "var(--cyan)",
+                  fontWeight: 600,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.4rem",
+                  zIndex: 2,
+                  backdropFilter: "blur(4px)",
+                }}
+              >
+                <span
+                  style={{
+                    width: 8,
+                    height: 8,
+                    borderRadius: "50%",
+                    background: "var(--cyan-glow)",
+                    animation: "pulse 2s infinite",
+                    flexShrink: 0,
+                  }}
+                />
+                Design Gráfico
+              </div>
+
+              <div
+                style={{
+                  height: "2.5rem",
+                  width: "2.5rem",
+                }}
+              ></div>
+
+              {/* (Vídeo) */}
               <video
                 src={videoMotion}
                 autoPlay
@@ -83,7 +160,7 @@ export default function About() {
                 muted
                 playsInline
                 loading="lazy"
-                alt="Animação de dimil designer — Desenvolvedor Front-end"
+                alt="Projeto de Motion"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -91,10 +168,12 @@ export default function About() {
                   objectPosition: "center top",
                   display: "block",
                   borderRadius: "var(--radius)",
+                  overflow: "hidden",
+                  border: "1px solid var(--border)",
                 }}
               />
 
-              {/* Chip: disponível */}
+              {/* Chip: Motion */}
               <div
                 style={{
                   position: "absolute",
@@ -124,7 +203,7 @@ export default function About() {
                     flexShrink: 0,
                   }}
                 />
-                Alguns projetos em Motion
+                Motion Design
               </div>
             </div>
           </motion.div>
@@ -146,21 +225,30 @@ export default function About() {
               }}
             >
               <p style={{ color: "var(--purple-light)", fontWeight: 500 }}>
-                Olá, eu sou o Edimilson, também conhecido como dimil. Seja bem-vindo!
+                Seja bem-vindo!
+                <br />
+                Eu sou o Edimilson, também conhecido como dimil. 
               </p>
               <p>
-                Sou um desenvolvedor Front-end com uma trajetória sólida em design e comunicação visual. Minha abordagem vai além do código: aplico anos de experiência em interfaces e branding para garantir que cada linha de desenvolvimento web tenha propósito, usabilidade e uma estética impecável.
+                Sou um desenvolvedor Front-end com uma trajetória sólida em
+                design e comunicação visual. Minha abordagem vai além do código:
+                aplico anos de experiência em interfaces e branding para
+                garantir que cada linha de desenvolvimento web tenha propósito,
+                usabilidade e uma estética de valor.
               </p>
 
               <p>
-                Minha carreira foi construída sobre a base do pensamento estratégico em design, e hoje, utilizo o desenvolvimento web como ferramenta para concretizar essas soluções. Com proficiência em React.js e tecnologias modernas de front-end, meu trabalho é entregar aplicações que não apenas funcionam, mas que elevam a experiência do usuário final.
+                Minha carreira foi construída sobre a base do pensamento
+                estratégico em design, e hoje, utilizo o desenvolvimento web
+                como ferramenta para concretizar essas soluções. Meu trabalho 
+                é entregar aplicações que não apenas funcionam, mas
+                que elevam a experiência do usuário final.
               </p>
 
-              <p>                
-              </p>
+              <p></p>
 
               <p style={{ color: "var(--purple-light)", fontWeight: 500 }}>
-                Minha transição para o desenvolvimento é, na verdade, uma evolução: trago a sensibilidade artística e a visão sistêmica para o ambiente do código, resultando em interfaces mais intuitivas, performáticas e alinhadas às necessidades do negócio.
+                Junto com minha transição para o desenvolvimento web trouxe a sensibilidade artística e a visão sistêmica para o ambiente do código, resultando em interfaces mais intuitivas, performáticas e alinhadas às necessidades do negócio.
               </p>
             </div>
 
