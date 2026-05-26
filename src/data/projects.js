@@ -2,128 +2,117 @@
 export const projects = [
   {
     id: 1,
-    title: "Workflow Manager - Sistema de tarefas diárias | Back-end",
-    description:
-      "O Workflow Manager é uma aplicação web moderna para organização e gerenciamento de tarefas e fluxos de trabalho.",
-    tech: ["Google AI Studio", "Gemini API", "Node.js", "Vercel", "Supabase"],
-    github: "https://github.com/dimildesigner/workflow_manager",
-    demo: "https://workflow-manager-eight.vercel.app/",
-    problem: "Organizar tarefas cotidianas de forma rápida e simples",
-    solution:
-      "Interface limpa e organizadas em cards para criar tarefas e posicioná-las na exata situação, ou seja, elas em estado inicial, em andamento ou finalizadas.",
-    highlights: [
-      "Gerenciamento de tarefas — Crie, edite e exclua tarefas com facilidade",
-      "Fluxos de trabalho personalizados — Organize tarefas em etapas do seu processo",
-      "Visualização em quadro — Interface estilo Kanban para acompanhamento visual",
-      "Acompanhamento de progresso — Monitore o status de cada atividade",
-      "Powered by Google AI — Recursos inteligentes para auxiliar na gestão",
-      "Design responsivo — Funciona em desktop e dispositivos móveis",
+    title: "Raffaello Sanzio - A Escola de Atenas",
+    type: "Front-end",
+    thumb: "/dimildesigner-escola_de_atenas_thumb.jpg",
+    demo: "https://raffaello-sanzio-a-escola-de-atenas.vercel.app/",
+    repo: "https://github.com/dimildesigner/raffaello_sanzio_a_escola_de_atenas",
+    problema: "A landing page tem objetivo de explorar o tema da arte e cultura em uma apresentação digital interativa e envolvente.",
+    solucao: "Garantir uma experiência de usuário fluida e imersiva, com uma narrativa visual que guia o visitante através da história e dos detalhes da pintura, utilizando técnicas modernas de web design para criar uma apresentação impactante e acessível.",
+    destaques: [
+      "Navegação e Interface atraente", 
+      "Cursor personalizado com trail fluido", 
+      "Barra de progresso global (scroll 0→100%)",
+      "Navegação por âncoras com scroll suave entre seções", 
+      "Animações de entrada via Intersection Observer (fade + translateY)"
     ],
+    stack: ["HTML5", "CSS3", "JavaScript ES6 (vanilla)"]
   },
+  // Adicione seus próximos projetos aqui seguindo esta estrutura
   {
     id: 2,
-    title:
-      "Petstok - Sistema de Gestão ERP para Petshops | Front-end e Back-end",
-    description:
-      "O Petstock é um ERP Lite desenvolvido para o mercado pet, com foco em controle de estoque inteligente, catálogo segmentado por espécie e alertas automáticos de reposição e validade.",
-    tech: ["React", "Vite", "Tailwind CSS", "React Router", "Axios"],
-    github: "https://github.com/dimildesigner/projeto_petshop_api_frontend",
-    demo: "https://projeto-petshop-api-frontend.vercel.app/",
-    problem:
-      "Servir como ferramenta auxiliar para negócios de Petshop, oferecendo controle de estoque, catálogo segmentado por espécie e alertas automáticos de reposição e validade, tudo isso com uma interface intuitiva e responsiva.",
-    solution:
-      "Criação de um sistema ERP Lite para Petshops, com funcionalidades que suprem as necessidades específicas do mercado pet. O sistema inclui controle de estoque inteligente, catálogo segmentado por espécie e alertas automáticos de reposição e validade, tudo isso com uma interface intuitiva e responsiva.",
-    highlights: [
-      "Autenticação",
-      "Dashboard",
+    title: "Petstok - Sistema de Gestão ERP para Petshops",
+    type: "Back-end",
+    thumb: "/dimildesigner-petstock_backend_thumb.jpg",
+    demo: "https://projeto-petshop-api-frontend.vercel.app/#",
+    repo: "https://github.com/dimildesigner/projeto_petshop_api_backend",
+    problema: "Servir como ferramenta auxiliar para negócios de Petshop, oferecendo controle de estoque, catálogo segmentado por espécie e alertas automáticos de reposição e validade, tudo isso com uma interface intuitiva e responsiva.",
+    solucao: "Criação de um sistema ERP Lite para Petshops, com funcionalidades que suprem as necessidades específicas do mercado pet. O sistema inclui controle de estoque inteligente, catálogo segmentado por espécie e alertas automáticos de reposição e validade, tudo isso com uma interface intuitiva e responsiva.",
+    destaques: [
+      "Autenticação", 
+      "Dashboard", 
       "Catálogo de Produtos",
-      "Controle de Estoque",
-      "Cantinho da Oportunidade (Promoções)",
+      "Controle de Estoque", 
+      "Cantinho da Oportunidade (Promoções)", 
       "Administração de Usuários",
+      "CRUD completo de produtos"
     ],
+    stack: ["React.js", "Tailwind CSS", "Vite"]
   },
+
   {
     id: 3,
-    title:
-      "Raffaello Sanzio - A Escola de Atenas - Landing Page Cultural | Front-end",
-    description:
-      "Este projeto é uma experiência de scroll-driven storytelling inspirada nas grandes exposições digitais de museus e nos especiais interativos do New York Times. O objetivo é apresentar a pintura de Raffaello Sanzio - A Escola de Atenas não apenas como uma obra de arte, mas como uma narrativa viva — filosófica, histórica e surpreendentemente contemporânea.",
-    tech: ["HTML5", "CSS3", "JavaScript ES6 (vanilla)"],
-    github:
-      "https://github.com/dimildesigner/raffaello_sanzio_a_escola_de_atenas",
-    demo: "https://raffaello-sanzio-a-escola-de-atenas.vercel.app/",
-    problem:
-      "A landing page tem objetivo de explorar o tema da arte e cultura em uma apresentação digital interativa e envolvente.",
-    solution:
-      "Garantir uma experiência de usuário fluida e imersiva, com uma narrativa visual que guia o visitante através da história e dos detalhes da pintura, utilizando técnicas modernas de web design para criar uma apresentação impactante e acessível.",
-    highlights: [
-      "Navegação e Interface atraente",
-      "Cursor personalizado com trail fluido",
-      "Barra de progresso global (scroll 0→100%)",
-      "Navegação por âncoras com scroll suave entre seções",
-      "Animações de entrada via Intersection Observer (fade + translateY)",
+    title: "Jukebox Experience - iTunes Search API",
+    type: "Full-stack",
+    thumb: "/dimildesigner-jukebox_experience_thumb.jpg",
+    demo: "https://jukebox-experience.vercel.app/",
+    repo: "https://github.com/dimildesigner/jukebox-experience",
+    problema: "Explorar de forma criativa o consumo de uma API e gerar valor, no caso, entretenimento e buscador de músicas de todos os gêneros e estilos.",
+    solucao: "Uma aplicação web imersiva que combina uma cena 3D interativa com busca e reprodução de músicas em tempo real. O usuário pode girar o jukebox, explorar o cenário psicodélico e descobrir músicas pelo painel lateral — tudo em uma única experiência fluida.",
+    destaques: [
+      "Cena 3D interativa - mouse e touch controls", 
+      "Busca de músicaspor artista, álbum ou título via iTunes Search API", 
+      "Preview de 30 segundos de reprodução",
+      "Disco de vinil animado e notas musicais flutuando", 
+      "Reatividade ao áudio com luzes coloridas, estelas e cenário psicodélico", 
+      "Responsivo em desktop e mobile (touch e resize dinâmico)",
+      "Mini player no rodapé com capa do álbum e artista", 
+      "Efeito sonoto de scratch, quando o Jukebox é rotacionado"
     ],
+    stack: ["Three.js", "Node.js", "Vite"]
   },
+
   {
     id: 4,
-    title: "Revista 3D | Interativa",
-    description:
-      "Uma experiência imersiva de leitura digital desenvolvida com React.js e Three.js. Este projeto simula uma revista física em um ambiente 3D, permitindo a interação com a virada de páginas, curvatura realista do papel e iluminação dinâmica.",
-    tech: ["Three.js", "Vite", "Node.js"],
-    github: "https://github.com/dimildesigner/revista-3d-interativa/",
-    demo: "https://revista-3d-interativa.vercel.app/",
-    problem:
-      "Este projeto nasceu da necessidade de criar uma forma inovadora de apresentar conteúdos digitais, unindo o design editorial clássico com as tecnologias mais modernas de renderização WebGL.",
-    solution:
-      "O grande desafio técnico superado foi a implementação de uma geometria personalizada que permite a deformação das páginas durante a transição, garantindo que a revista se comporte de forma orgânica e estável em diferentes navegadores.",
-    highlights: [
-      "Geometria de Lâmina, implementação de páginas com espessura real",
-      "Curvatura Dinâmica, simula uma dobra do papel baseada na posição da página",
-      "Navegação Inteligente e controle por cliques (esquerdo avança e direito volta)",
-      "Performance Otimizada",
-      "Interface flutuante com foco em tipografia e contraste",
+    title: "Detetive do Descarte - Treinamento Corporativo Gamificado",
+    type: "Front-end",
+    thumb: "/dimildesigner-detetive-do-descarte_frontend_thumb.jpg",
+    demo: "https://detetive-do-descarte.vercel.app/",
+    repo: "https://github.com/dimildesigner/detetive-do-descarte",
+    problema: "Treinamentos corporativos tradicionais sobre sustentabilidade e compliance costumam ser densos, cansativos e geram baixo engajamento prático, resultando em erros contínuos de descarte no ambiente de trabalho.",
+    solucao: "Transformar regras complexas de reciclagem em uma investigação policial interativa. Através de 4 casos criminais baseados em histórias em quadrinhos, o usuário aprende ativamente a triagem correta de resíduos enquanto joga e pontua.",
+    destaques: [
+      "Destaques: Direção de Arte Autoral: Identidade visual inspirada em pulp art e estética Sin City, com ilustrações exclusivas em alto contraste.", 
+      "Mecânicas de Front-end Avançadas: Iluminação de cenários em tempo real com lanterna via HTML5 Canvas e simulação física de cabos elásticos/fitas com curvas SVG e GSAP.", 
+      "Design focado em UX: Interface responsiva, desafios dinâmicos com ordenação randômica e trilha sonora imersiva, com controle de áudio intuitivo para o usuário."   
     ],
+    stack: ["React.js", "Tailwind CSS", "Vite", "GSAP (GreenSock Animation)", "HTML5 Canvas", "SVG Dinâmico"]
   },
-   
+
   {
     id: 5,
-    title: "Detetive do Descarte: Operação Eco-Compliance",
-    description:
-      "Um treinamento corporativo gamificado em formato de Graphic Novel interativa. O jogo mergulha em uma atmosfera Noir dos anos 1940 para engajar colaboradores na prática do descarte consciente e da logística reversa, unindo narrativas de mistério a mecânicas visuais de alta imersão.",
-    tech: ["React.js (Vite)", "Tailwind CSS", "GSAP (GreenSock Animation)", "HTML5 Canvas", "SVG Dinâmico" ],
-    github: "https://github.com/dimildesigner/detetive-do-descarte",
-    demo: "https://detetive-do-descarte.vercel.app/",
-    problem:
-      "Treinamentos corporativos tradicionais sobre sustentabilidade e compliance costumam ser densos, cansativos e geram baixo engajamento prático, resultando em erros contínuos de descarte no ambiente de trabalho.",
-    solution:
-      "Transformar regras complexas de reciclagem em uma investigação policial interativa. Através de 4 casos criminais baseados em histórias em quadrinhos, o usuário aprende ativamente a triagem correta de resíduos enquanto joga e pontua.",
-    highlights: [
-      "Destaques: Direção de Arte Autoral: Identidade visual inspirada em pulp art e estética Sin City, com ilustrações exclusivas em alto contraste.",
-      "Mecânicas de Front-end Avançadas: Iluminação de cenários em tempo real com lanterna via HTML5 Canvas e simulação física de cabos elásticos/fitas com curvas SVG e GSAP.",
-      "Design focado em UX: Interface responsiva, desafios dinâmicos com ordenação randômica e trilha sonora imersiva, com controle de áudio intuitivo para o usuário.",
+    title: "Revista 3D | Interativa",
+    type: "Design Gráfico",
+    thumb: "/dimildesigner-revista3d-interativa_desiger-grafico_thumb.jpg",
+    demo: "https://revista-3d-interativa.vercel.app/",
+    repo: "https://github.com/dimildesigner/revista-3d-interativa/",
+    problema: "Este projeto nasceu da necessidade de criar uma forma inovadora de apresentar conteúdos digitais, unindo o design editorial clássico com as tecnologias mais modernas de renderização WebGL.",
+    solucao: "O grande desafio técnico superado foi a implementação de uma geometria personalizada que permite a deformação das páginas durante a transição, garantindo que a revista se comporte de forma orgânica e estável em diferentes navegadores.",
+    destaques: [
+      "Geometria de Lâmina, implementação de páginas com espessura real.", 
+      "Curvatura Dinâmica, simula uma dobra do papel baseada na posição da página.", 
+      "Navegação Inteligente e controle por cliques (esquerdo avança e direito volta).",
+      "Performance Otimizada.", 
+      "Interface flutuante com foco em tipografia e contraste.",   
     ],
+    stack: ["Three.js", "Node.js", "Vite"]
   },
+
   {
     id: 6,
-    title: "Jukebox Experience - iTunes Search API",
-    description:
-      "Uma experiência musical imersiva em 3D — busque, ouça e sinta a música.",
-    tech: ["Three.js", "Vite", "Node.js"],
-    github: "https://github.com/dimildesigner/jukebox-experience",
-    demo: "https://jukebox-experience.vercel.app/",
-    problem:
-      "Explorar de forma criativa o consumo de uma API e gerar valor, no caso, entretenimento e buscador de músicas de todos os gêneros e estilos.",
-    solution:
-      "Uma aplicação web imersiva que combina uma cena 3D interativa com busca e reprodução de músicas em tempo real. O usuário pode girar o jukebox, explorar o cenário psicodélico e descobrir músicas pelo painel lateral — tudo em uma única experiência fluida.",
-    highlights: [
-      "Cena 3D interativa - mouse e touch controls",
-      "Busca de músicaspor artista, álbum ou título via iTunes Search API",
-      "Preview de 30 segundos de reprodução",
-      "Disco de vinil animado e notas musicais flutuando",
-      "Reatividade ao áudio com luzes coloridas, estelas e cenário psicodélico",
-      "Responsivo em desktop e mobile (touch e resize dinâmico)",
-      "Mini player no rodapé com capa do álbum e artista",
-      "Efeito sonoto de scratch, quando o Jukebox é rotacionado",
+    title: "Coletânea de Motion e Animações",
+    type: "Motion",
+    thumb: "/dimildesigner-motion_thumb.jpg",
+    demo: "https://player.cloudinary.com/embed/?cloud_name=dswxda39i&public_id=projetos_motion_larh2u",
+    repo: "",
+    problema: "O vídeo apresenta uma coletânea de motion design e animações criadas para diversos projetos.",
+    solucao: "Foram projetos diversos desde edições de vídeos para redes sociais e e-learning, até animações para campanhas publicitárias.",
+    destaques: [
+      "Animações Vivo Explorer e Petrobras.", 
+      "Vinhetas animadas para o mascote Piausin, da Fundação Renova", 
+      "Trechos de edições de vídeos de Educação Corporativa para diversas empresas."   
     ],
-  }, 
+    stack: ["After Effects", "Premiere Pro", "Animate", "Illustrator", "Photoshop"]
+  },
+
 ];
