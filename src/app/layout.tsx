@@ -58,7 +58,7 @@ export const metadata = {
     title: "dimildesigner | Front-end Developer & UX/UI Designer",
     description:
       "Interfaces focadas em UX e performance. Conheça meus projetos e trajetória profissional.",
-    url: "https://dimildesigner-meu-portfolio.vercel.app/", // Após o deploy
+    url: "https://dimildesigner-portfolio.vercel.app/", 
     siteName: "dimildesigner | Portfolio",
     type: "website",
   },
@@ -69,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@type": "Person",
     name: "Edimilson Teixeira (Eddie)",
     jobTitle: "Front-end Developer & UX/UI Designer",
-    url: "https://dimildesigner-meu-portfolio.vercel.app/",
+    url: "https://dimildesigner-portfolio.vercel.app/",
     address: {
       "@type": "PostalAddress",
       addressLocality: "São Paulo",
