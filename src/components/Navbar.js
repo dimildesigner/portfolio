@@ -34,7 +34,7 @@ export default function Navbar() {
             className="w-6 h-6 object-contain"
           />
           <span>
-            dimil<span className="text-primary-light dark:text-accent">.designer</span>
+            dimil designer<span className="text-primary-light dark:text-accent">.dev</span>
           </span>
         </Link>
 

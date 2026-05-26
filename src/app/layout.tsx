@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Eddie | Front-end Developer & UI Designer",
+  title: "dimil designer.dev | Front-end Developer & UI Designer",
   description:
     "Portfólio profissional de Edimilson (Eddie), desenvolvedor Front-end especializado em React, Next.js e UX/UI Design. Especialista em criar interfaces performáticas e estéticas.",
   keywords: [
@@ -55,7 +55,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "dimildesigner | Front-end Developer & UX/UI Designer",
+    title: "dimil designer.dev | Front-end Developer & UX/UI Designer",
     description:
       "Interfaces focadas em UX e performance. Conheça meus projetos e trajetória profissional.",
     url: "https://dimildesigner-portfolio.vercel.app/", 
@@ -95,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "Portfolio de Desenvolvimento Web",
       "Desenvolvedor Front-end",
       "Edimilson Teixeira Portfolio",
+      "dimil designer.dev",
     ],
   };
 
