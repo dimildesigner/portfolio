@@ -19,7 +19,6 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full top-0 left-0 z-50 bg-bg-light/70 dark:bg-bg-dark/70 backdrop-blur-md border-b border-border-light dark:border-border-dark transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        
         {/* Logo/Name com SVG Integrado */}
         <Link
           href="/"
@@ -34,7 +33,8 @@ export default function Navbar() {
             className="w-6 h-6 object-contain"
           />
           <span>
-            dimil designer<span className="text-primary-light dark:text-accent">.dev</span>
+            dimil designer
+            <span className="text-primary-light dark:text-accent">.dev</span>
           </span>
         </Link>
 
@@ -58,7 +58,7 @@ export default function Navbar() {
 
           {/* Currículo Técnico */}
           <a
-            href="/cv_edimilson_dev2026.pdf"
+            href="/curriculo_edimilson_teixeira2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 border border-primary-light/50 dark:border-accent/40 text-primary-light dark:text-accent hover:bg-primary-light hover:text-white dark:hover:bg-accent dark:hover:text-bg-dark text-xs uppercase tracking-widest font-semibold rounded-full transition-all duration-300 active:scale-95 shadow-sm"
@@ -84,7 +84,7 @@ export default function Navbar() {
           >
             {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
           </button>
-          
+
           <button
             className="p-2 text-gray-600 dark:text-gray-300"
             onClick={() => setIsOpen(!isOpen)}
@@ -109,7 +109,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/cv_edimilson_dev2026.pdf"
+            href="/curriculo_edimilson_teixeira2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-center py-2.5 mt-2 border border-primary-light text-primary-light dark:border-accent dark:text-accent text-xs uppercase tracking-widest font-bold rounded-full transition-all"

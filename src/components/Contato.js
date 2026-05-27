@@ -8,7 +8,10 @@ export default function Contato() {
   };
 
   return (
-    <section id="contato" className="py-32 px-6 max-w-4xl mx-auto border-t border-border-light dark:border-border-dark">
+    <section
+      id="contato"
+      className="py-32 px-6 max-w-4xl mx-auto border-t border-border-light dark:border-border-dark"
+    >
       <h3 className="text-[11px] font-mono tracking-widest text-primary-light dark:text-accent uppercase mb-2">
         // CONNECT & COLLABORATE
       </h3>
@@ -16,7 +19,9 @@ export default function Contato() {
         Vamos construir algo juntos?
       </h2>
       <p className="text-gray-500 dark:text-gray-400 mb-12 max-w-xl leading-relaxed text-sm sm:text-base">
-        Estou sempre em busca de novos desafios técnicos como desenvolvedor Front-end, onde minha experiência artística multidisciplinar e rigor visual em design possam gerar conversão e valor para sua equipe.
+        Estou sempre em busca de novos desafios técnicos como desenvolvedor
+        Front-end, onde minha experiência artística multidisciplinar e rigor
+        visual em design possam gerar conversão e valor para sua equipe.
       </p>
 
       {/* Contêiner de Contato Responsivo Light/Dark */}
@@ -28,8 +33,8 @@ export default function Contato() {
               dimildesigner@gmail.com
             </span>
           </div>
-          <button 
-            onClick={copyEmail} 
+          <button
+            onClick={copyEmail}
             className="w-full md:w-auto flex items-center justify-center gap-2 bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-6 py-3 rounded-xl hover:opacity-90 active:scale-95 text-xs uppercase tracking-widest font-bold transition-all shadow-sm cursor-pointer"
           >
             <Copy size={13} />
@@ -39,8 +44,8 @@ export default function Contato() {
 
         {/* Links Sociais e Currículo */}
         <div className="flex flex-wrap gap-4 select-none">
-          <a 
-            href="https://www.linkedin.com/in/dimildesigner" 
+          <a
+            href="https://www.linkedin.com/in/dimildesigner"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 min-w-[120px] flex items-center justify-center gap-2 bg-gray-50 dark:bg-white/5 border border-border-light dark:border-border-dark hover:bg-gray-100 dark:hover:bg-white/10 p-3.5 rounded-xl text-[10px] uppercase font-mono font-bold tracking-widest text-gray-700 dark:text-gray-300 transition-colors"
@@ -60,9 +65,9 @@ export default function Contato() {
             </svg>
             LinkedIn
           </a>
-          
-          <a 
-            href="https://github.com/dimildesigner" 
+
+          <a
+            href="https://github.com/dimildesigner"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 min-w-[120px] flex items-center justify-center gap-2 bg-gray-50 dark:bg-white/5 border border-border-light dark:border-border-dark hover:bg-gray-100 dark:hover:bg-white/10 p-3.5 rounded-xl text-[10px] uppercase font-mono font-bold tracking-widest text-gray-700 dark:text-gray-300 transition-colors"
@@ -81,9 +86,9 @@ export default function Contato() {
             </svg>
             GitHub
           </a>
-          
-          <a 
-            href="/cv_edimilson_dev2026.pdf" 
+
+          <a
+            href="/curriculo_edimilson_teixeira2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 min-w-[120px] flex items-center justify-center gap-2 bg-gray-50 dark:bg-white/5 border border-border-light dark:border-border-dark hover:bg-gray-100 dark:hover:bg-white/10 p-3.5 rounded-xl text-[10px] uppercase font-mono font-bold tracking-widest text-gray-700 dark:text-gray-300 transition-colors"
@@ -93,7 +98,7 @@ export default function Contato() {
           </a>
         </div>
       </div>
-      
+
       <p className="mt-8 text-xs text-gray-400 dark:text-gray-500 border-l-2 border-primary-light dark:border-accent pl-4 font-mono">
         // DISPONÍVEL PARA NOVOS DESAFIOS. RETORNO DE MENSAGENS EM ATÉ 24 HORAS.
       </p>
