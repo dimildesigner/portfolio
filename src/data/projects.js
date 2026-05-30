@@ -1,4 +1,4 @@
-// src/data/projects.js
+  // Lista de projetos apresentados
 export const projects = [
   {
     id: 1,
@@ -18,26 +18,22 @@ export const projects = [
     ],
     stack: ["HTML5", "CSS3", "JavaScript ES6 (vanilla)"]
   },
-  // Adicione seus próximos projetos aqui seguindo esta estrutura
+
   {
     id: 2,
-    title: "Petstok - Sistema de Gestão ERP para Petshops",
-    type: "Back-end",
-    thumb: "/dimildesigner-petstock_backend_thumb.jpg",
-    demo: "https://projeto-petshop-api-frontend.vercel.app/#",
-    repo: "https://github.com/dimildesigner/projeto_petshop_api_backend",
-    problema: "Servir como ferramenta auxiliar para negócios de Petshop, oferecendo controle de estoque, catálogo segmentado por espécie e alertas automáticos de reposição e validade, tudo isso com uma interface intuitiva e responsiva.",
-    solucao: "Criação de um sistema ERP Lite para Petshops, com funcionalidades que suprem as necessidades específicas do mercado pet. O sistema inclui controle de estoque inteligente, catálogo segmentado por espécie e alertas automáticos de reposição e validade, tudo isso com uma interface intuitiva e responsiva.",
+    title: "Detetive do Descarte - Treinamento Corporativo Gamificado",
+    type: "Front-end",
+    thumb: "/dimildesigner-detetive-do-descarte_frontend_thumb.jpg",
+    demo: "https://detetive-do-descarte.vercel.app/",
+    repo: "https://github.com/dimildesigner/detetive-do-descarte",
+    problema: "Treinamentos corporativos tradicionais sobre sustentabilidade e compliance costumam ser densos, cansativos e geram baixo engajamento prático, resultando em erros contínuos de descarte no ambiente de trabalho.",
+    solucao: "Transformar regras complexas de reciclagem em uma investigação policial interativa. Através de 4 casos criminais baseados em histórias em quadrinhos, o usuário aprende ativamente a triagem correta de resíduos enquanto joga e pontua.",
     destaques: [
-      "Autenticação", 
-      "Dashboard", 
-      "Catálogo de Produtos",
-      "Controle de Estoque", 
-      "Cantinho da Oportunidade (Promoções)", 
-      "Administração de Usuários",
-      "CRUD completo de produtos"
+      "Destaques: Direção de Arte Autoral: Identidade visual inspirada em pulp art e estética Sin City, com ilustrações exclusivas em alto contraste.", 
+      "Mecânicas de Front-end Avançadas: Iluminação de cenários em tempo real com lanterna via HTML5 Canvas e simulação física de cabos elásticos/fitas com curvas SVG e GSAP.", 
+      "Design focado em UX: Interface responsiva, desafios dinâmicos com ordenação randômica e trilha sonora imersiva, com controle de áudio intuitivo para o usuário."   
     ],
-    stack: ["React.js", "Tailwind CSS", "Vite"]
+    stack: ["React.js", "Tailwind CSS", "Vite", "GSAP (GreenSock Animation)", "HTML5 Canvas", "SVG Dinâmico"]
   },
 
   {
@@ -61,26 +57,9 @@ export const projects = [
     ],
     stack: ["Three.js", "Node.js", "Vite"]
   },
-
+  
   {
     id: 4,
-    title: "Detetive do Descarte - Treinamento Corporativo Gamificado",
-    type: "Front-end",
-    thumb: "/dimildesigner-detetive-do-descarte_frontend_thumb.jpg",
-    demo: "https://detetive-do-descarte.vercel.app/",
-    repo: "https://github.com/dimildesigner/detetive-do-descarte",
-    problema: "Treinamentos corporativos tradicionais sobre sustentabilidade e compliance costumam ser densos, cansativos e geram baixo engajamento prático, resultando em erros contínuos de descarte no ambiente de trabalho.",
-    solucao: "Transformar regras complexas de reciclagem em uma investigação policial interativa. Através de 4 casos criminais baseados em histórias em quadrinhos, o usuário aprende ativamente a triagem correta de resíduos enquanto joga e pontua.",
-    destaques: [
-      "Destaques: Direção de Arte Autoral: Identidade visual inspirada em pulp art e estética Sin City, com ilustrações exclusivas em alto contraste.", 
-      "Mecânicas de Front-end Avançadas: Iluminação de cenários em tempo real com lanterna via HTML5 Canvas e simulação física de cabos elásticos/fitas com curvas SVG e GSAP.", 
-      "Design focado em UX: Interface responsiva, desafios dinâmicos com ordenação randômica e trilha sonora imersiva, com controle de áudio intuitivo para o usuário."   
-    ],
-    stack: ["React.js", "Tailwind CSS", "Vite", "GSAP (GreenSock Animation)", "HTML5 Canvas", "SVG Dinâmico"]
-  },
-
-  {
-    id: 5,
     title: "News Gallery — The Guardian Open Platform API",
     type: "Full-stack",
     thumb: "/dimildesigner_news-gallery_thumb.jpg",
@@ -99,7 +78,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 5,
     title: "Revista 3D | Interativa",
     type: "Design Gráfico",
     thumb: "/dimildesigner-revista3d-interativa_desiger-grafico_thumb.jpg",
@@ -118,7 +97,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 6,
     title: "Coletânea de Motion e Animações",
     type: "Motion",
     thumb: "/dimildesigner-motion_thumb.jpg",
@@ -132,6 +111,27 @@ export const projects = [
       "Trechos de edições de vídeos de Educação Corporativa para diversas empresas."   
     ],
     stack: ["After Effects", "Premiere Pro", "Animate", "Illustrator", "Photoshop"]
-  },  
+  },
+  
+  {
+    id: 7,
+    title: "Petstok - Sistema de Gestão ERP para Petshops",
+    type: "Back-end",
+    thumb: "/dimildesigner-petstock_backend_thumb.jpg",
+    demo: "https://projeto-petshop-api-frontend.vercel.app/#",
+    repo: "https://github.com/dimildesigner/projeto_petshop_api_backend",
+    problema: "Servir como ferramenta auxiliar para negócios de Petshop, oferecendo controle de estoque, catálogo segmentado por espécie e alertas automáticos de reposição e validade, tudo isso com uma interface intuitiva e responsiva.",
+    solucao: "Criação de um sistema ERP Lite para Petshops, com funcionalidades que suprem as necessidades específicas do mercado pet. O sistema inclui controle de estoque inteligente, catálogo segmentado por espécie e alertas automáticos de reposição e validade, tudo isso com uma interface intuitiva e responsiva.",
+    destaques: [
+      "Autenticação", 
+      "Dashboard", 
+      "Catálogo de Produtos",
+      "Controle de Estoque", 
+      "Cantinho da Oportunidade (Promoções)", 
+      "Administração de Usuários",
+      "CRUD completo de produtos"
+    ],
+    stack: ["React.js", "Tailwind CSS", "Vite"]
+  },
 
 ];
