@@ -81,6 +81,25 @@ export const projects = [
 
   {
     id: 5,
+    title: "News Gallery — The Guardian Open Platform API",
+    type: "Full-stack",
+    thumb: "/dimildesigner_news-gallery_thumb.jpg",
+    demo: "news-gallery-kappa.vercel.app",
+    repo: "https://github.com/dimildesigner/news-gallery",
+    problema: "Consumir notícias online virou uma experiência genérica, acelerada e visualmente cansativa. Faltava um produto que respeitasse o conteúdo jornalístico e oferecesse ao leitor uma experiência que valorizasse seu tempo e atenção.",
+    solucao: "Uma galeria editorial de notícias ao vivo, onde o scroll é o elemento narrativo principal. O conteúdo é servido em tempo real pela Guardian API, com fallback inteligente, categorias traduzidas automaticamente por locale e modal editorial para leitura imersiva — tudo em EN, PT-BR e ES.",
+    destaques: [
+      "Hero cinematográfico com parallax e grain overlay.", 
+      "Integração real com Guardian Open Platform API.", 
+      "Internacionalização completa em 3 idiomas.",
+      "Scroll suave via Lenis + transições GPU-accelerated.", 
+      "Deploy em produção na Vercel com CI/CD via GitHub."
+    ],
+    stack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Framer Motion", "Lenis", "next-intl", "Guardian Open Platform API", "Vercel"]
+  },
+
+  {
+    id: 6,
     title: "Revista 3D | Interativa",
     type: "Design Gráfico",
     thumb: "/dimildesigner-revista3d-interativa_desiger-grafico_thumb.jpg",
@@ -99,7 +118,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Coletânea de Motion e Animações",
     type: "Motion",
     thumb: "/dimildesigner-motion_thumb.jpg",
@@ -113,6 +132,6 @@ export const projects = [
       "Trechos de edições de vídeos de Educação Corporativa para diversas empresas."   
     ],
     stack: ["After Effects", "Premiere Pro", "Animate", "Illustrator", "Photoshop"]
-  },
+  },  
 
 ];
