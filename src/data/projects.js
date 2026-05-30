@@ -63,7 +63,7 @@ export const projects = [
     title: "News Gallery — The Guardian Open Platform API",
     type: "Full-stack",
     thumb: "/dimildesigner_news-gallery_thumb.jpg",
-    demo: "news-gallery-kappa.vercel.app",
+    demo: "https://news-gallery-kappa.vercel.app/pt",
     repo: "https://github.com/dimildesigner/news-gallery",
     problema: "Consumir notícias online virou uma experiência genérica, acelerada e visualmente cansativa. Faltava um produto que respeitasse o conteúdo jornalístico e oferecesse ao leitor uma experiência que valorizasse seu tempo e atenção.",
     solucao: "Uma galeria editorial de notícias ao vivo, onde o scroll é o elemento narrativo principal. O conteúdo é servido em tempo real pela Guardian API, com fallback inteligente, categorias traduzidas automaticamente por locale e modal editorial para leitura imersiva — tudo em EN, PT-BR e ES.",
