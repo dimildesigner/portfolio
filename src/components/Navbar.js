@@ -27,14 +27,14 @@ export default function Navbar() {
         >
           <Image
             src="/logotipo_dimildesigner.svg"
-            alt="Logotipo Dimil Designer"
+            alt="Logotipo dimildesigner"
             width={24}
             height={24}
             className="w-6 h-6 object-contain"
           />
           <span>
-            dimil designer
-            <span className="text-primary-light dark:text-accent">.dev</span>
+            dimildesigner
+            <span className="text-primary-light dark:text-accent">.portfolio</span>
           </span>
         </Link>
 
